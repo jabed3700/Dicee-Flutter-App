@@ -33,7 +33,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  leftDiceNumber = 5;
+                  leftDiceNumber = Random().nextInt(6) + 1;
                   print('diceNumber = $leftDiceNumber');
                 });
                 print('Left button got pressed');
